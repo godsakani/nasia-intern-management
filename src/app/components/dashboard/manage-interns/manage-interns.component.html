@@ -1,0 +1,205 @@
+<div class="container-scroller">
+    <app-navbar></app-navbar>
+    <!-- partial -->
+    <app-side-nav></app-side-nav>
+    <div class="container-fluid page-body-wrapper my-5">
+     <!-- partial -->
+     <div class="main-panel">
+        <div class="content-wrapper">
+        <!-- Page Title Header Starts-->
+        <div class="row page-title-header">
+            <div class="col-12">
+              <div class="page-header">
+                <h3 class="page-title">Manage-Interns</h3>
+                <div class="quick-link-wrapper w-100 d-md-flex flex-md-wrap">
+                  <ul class="quick-links ml-auto">
+                    <li><a href="#">Settings</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="page-header-toolbar">
+                <div class="btn-group toolbar-item" role="group" aria-label="Basic example">
+                  <button type="button" class="btn btn-secondary"><i class="mdi mdi-chevron-left"></i></button>
+                  <button type="button" class="btn btn-secondary">03/02/2019 - 20/08/2019</button>
+                  <button type="button" class="btn btn-secondary"><i class="mdi mdi-chevron-right"></i></button>
+                </div>
+                <div class="filter-wrapper">
+                  <div ngbDropdown class="dropdown toolbar-item">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownsorting"
+                      data-toggle="dropdown" aria-haspopup="true" ngbDropdownToggle aria-expanded="false">Past
+                      Interns</button>
+                    <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="dropdownsorting">
+                      <a ngbDropdownItem routerLink="dashboard/dash">Last Month</a>
+                      <a ngbDropdownItem routerLink="dashboard/dash">Last Year</a>
+                    </div>
+                  </div>
+                  <a href="#" class="advanced-link toolbar-item">Advanced Options</a>
+                </div>
+                <div class="sort-wrapper">
+                  <button type="button" class="btn btn-primary toolbar-item" id="btns">New</button>
+                  <div ngbDropdown class="dropdown ml-lg-auto ml-3 toolbar-item">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownexport"
+                      ngbDropdownToggle data-toggle="dropdown" aria-haspopup="true"
+                      aria-expanded="false">Export</button>
+                    <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="dropdownexport">
+                      <a ngbDropdownItem routerLink="dash">Export as PDF</a>
+                      <a ngbDropdownItem routerLink="dash">Export as DOCX</a>
+                      <a ngbDropdownItem routerLink="dash">Export as CDR</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Page Title Header Ends-->
+          <div class="row">
+            <div class="col-12 grid-margin">
+              <div class="card">
+                <div class="card-body">
+                  <h1 class="card-title">Add-Interns</h1>
+                  <form class="form-sample">
+                    <h2 class="card-description"> Interns info </h2>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group row">
+                          <label class="col-sm-3 col-form-label">First Name</label>
+                          <div class="col-sm-9">
+                            <input type="text" class="form-control" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group row">
+                          <label class="col-sm-3 col-form-label">Last Name</label>
+                          <div class="col-sm-9">
+                            <input type="text" class="form-control" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group row">
+                          <label class="col-sm-3 col-form-label">Gender</label>
+                          <div class="col-sm-9">
+                            <select class="form-control">
+                              <option>Male</option>
+                              <option>Female</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group row">
+                          <label class="col-sm-3 col-form-label">Date of Birth</label>
+                          <div class="col-sm-9">
+                            <input class="form-control" placeholder="dd/mm/yyyy" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group row">
+                          <label class="col-sm-3 col-form-label">Category</label>
+                          <div class="col-sm-9">
+                            <select class="form-control">
+                              <option>Category1</option>
+                              <option>Category2</option>
+                              <option>Category3</option>
+                              <option>Category4</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group row">
+                          <label class="col-sm-3 col-form-label">Membership</label>
+                          <div class="col-sm-4">
+                            <div class="form-radio">
+                              <label class="form-check-label">
+                                <input type="radio" class="form-check-input" name="membershipRadios" id="membershipRadios1" value="" checked> Free </label>
+                            </div>
+                          </div>
+                          <div class="col-sm-5">
+                            <div class="form-radio">
+                              <label class="form-check-label">
+                                <input type="radio" class="form-check-input" name="membershipRadios" id="membershipRadios2" value="option2"> Professional </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <p class="card-description"> Address </p>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group row">
+                          <label class="col-sm-3 col-form-label">Address 1</label>
+                          <div class="col-sm-9">
+                            <input type="text" class="form-control" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group row">
+                          <label class="col-sm-3 col-form-label">State</label>
+                          <div class="col-sm-9">
+                            <input type="text" class="form-control" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group row">
+                          <label class="col-sm-3 col-form-label">Address 2</label>
+                          <div class="col-sm-9">
+                            <input type="text" class="form-control" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group row">
+                          <label class="col-sm-3 col-form-label">Postcode</label>
+                          <div class="col-sm-9">
+                            <input type="text" class="form-control" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group row">
+                          <label class="col-sm-3 col-form-label">City</label>
+                          <div class="col-sm-9">
+                            <input type="text" class="form-control" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group row">
+                          <label class="col-sm-3 col-form-label">Country</label>
+                          <div class="col-sm-9">
+                            <select class="form-control">
+                              <option>Cameroon</option>
+                              <option>Nigeria</option>
+                              <option>Russia</option>
+                              <option>Britain</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary mr-2 p-3" id="btns">Add Intern</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    </div>
+    <app-footer></app-footer>
+</div>

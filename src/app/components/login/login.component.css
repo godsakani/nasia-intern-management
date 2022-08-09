@@ -1,0 +1,9 @@
+body{
+    background-image: url('../../../assets/intern1.jpg');
+    background-repeat: no-repeat;
+}
+#btn1{
+    background-color:#0f3661;
+    border: none;
+    padding: 15px;
+}
